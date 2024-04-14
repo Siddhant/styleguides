@@ -1,0 +1,2 @@
+- primary key is never defined inline. Always defined as a `constraint` after all the column definitions.
+- function names are always in lowercase.
