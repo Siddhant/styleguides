@@ -6,7 +6,7 @@
 
 # Priamry Key(s) (PK)
 - Primary key(s) is never defined inline, even if the PK is just a single column. Always defined as a `constraint`, immediately after all the column definitions.
-- The primary key constraint is always named like so: `PK_<table name>`.
+- The primary key constraint is always named with a prefix, like so: `PK_<table_name>` / `pk_<table_name>`
 
 # SQLite
 - Always turn on the foreign keys pragma: `PRAGMA foreign_keys = ON;`
