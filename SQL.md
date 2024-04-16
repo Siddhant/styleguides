@@ -1,6 +1,9 @@
 
 - Function names are always in lowercase.
 
+# Columns
+- Unless really required, columns names should be lowercase.
+
 # Priamry Key(s) (PK)
 - Primary key(s) is never defined inline, even if the PK is just a single column. Always defined as a `constraint`, immediately after all the column definitions.
 - The primary key constraint is always named like so: `PK_<table name>`.
