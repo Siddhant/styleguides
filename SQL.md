@@ -1,5 +1,6 @@
 
 - Function names are always in lowercase.
+- The `check` clause for a column always begins on a new line, with an additional indentation level.
 
 # Columns
 - Unless really required, columns names should be lowercase.
