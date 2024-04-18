@@ -1,6 +1,11 @@
 
 - Function names are always in lowercase.
-- The `check` clause for a column always begins on a new line, with an additional indentation level.
+- The `check` clause for a column always begins on a new line, and with an additional indentation level.
+  ```
+  name text not null
+    check(length(trim(name)) > 0)
+  ```
+- xxx
 
 # Columns
 - Unless really required, columns names should be lowercase.
