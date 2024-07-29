@@ -1,1 +1,1 @@
-
+- Samll/short methods/functions should throw exceptions (for example `parseDate`), while high level methods should log errors/warnings and try to recover from the exception. The short method should not log any errros/warrings - it should just pass on the error message to it's called inside an exception.
