@@ -99,6 +99,13 @@ optional int64 account_id = 5;
 ### Currency
 - Just define a single enum to hold all the ISO-3 currency codes, and swear to yourself to never use anything else for a field meant to hold a currency value. 
 
+## Refactoring
+- Or if you have mistakenly added an unrelated message to your `.proto` file, you'll want to move a message to a different/new file. Here is how to do this safely:
+  - TODO move to a new file
+  - TODO move to an existing file
+- If your `.proto` files becomes too long, you'll find yourself wanting to split it into multiple files. Here is how to do this safely:
+  - TODO maybe this is same as above ? if yes, merge it
+
 # proto3
 
 # See also
