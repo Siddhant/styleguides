@@ -2,6 +2,23 @@
 ## Philosophy
 - I belive the `.proto` file to be a data dictioanry for your users. Hence, comment as much as you can everywhere. Since data modelling is an art, even docuemnt your desing decisionioning process.
 
+## Project structure
+```
+src/
+  main/
+    java/
+    proto/
+      enums/
+        - all .proto files for enums
+      - all .proto files
+    resrouces/
+  test/
+    java/
+      - test classes for your generated java from .proto files
+    proto/
+    resources/
+```
+
 ## File formatting
 - Use 2 spaces to indent.
 
