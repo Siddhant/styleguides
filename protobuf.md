@@ -7,18 +7,32 @@
 
 # proto2
 ## File structure
+- All files should be ordered in the following manner:
+1. License header (if applicable)
+2. Authors
+3. Date-of-file-creation 
+4. File overview
+5. Syntax
+6. Package
+7. Imports (sorted)
+8. File options
+9. Everything else
+
 - Alwyas start with an author and date-of-file-creation section:
 ```
 // Author: Siddhant Saraf (Siddhant.Saraf@abc.com)
 // Author: Mickey Mouse (mickey@disney.com)
 // Date: August 2023
 ```
+
 Rationale: Data modelling is an art, and any canvas should always have its author's signature. Hence, if you are migrating protos across files, carry over the Author names please - pay respect to the giants whoe shoulders you are sitting on!
+
+- TODO
 
 ## Packages
 -
 
-## Options
+## File Options
 - Always enable the Java multiple files option, even if (today!) you have only one message in the file:
 ```
 option java_multiple_files = true;
