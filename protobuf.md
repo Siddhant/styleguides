@@ -7,7 +7,12 @@
 
 # proto2
 ## File structure
--
+- Alwyas start with an author section:
+```
+// Author: Siddhant Saraf (Siddhant.Saraf@abc.com)
+// Author: Mickey Mouse (mickey@disney.com)
+```
+Rationale: Data modelling is an art, and any canvas should always have its author's signature.
 
 ## Packages
 -
