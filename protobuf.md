@@ -19,7 +19,7 @@
 9. Everything else
 
 - Alwyas start with an author and date-of-file-creation section:
-```
+```proto
 // Author: Siddhant Saraf (Siddhant.Saraf@abc.com)
 // Author: Mickey Mouse (mickey@disney.com)
 // Date: August 2023
@@ -34,7 +34,7 @@ Rationale: Data modelling is an art, and any canvas should always have its autho
 
 ## File Options
 - Always enable the Java multiple files option, even if (today!) you have only one message in the file:
-```
+```proto
 option java_multiple_files = true;
 ```
 
@@ -47,7 +47,7 @@ option java_multiple_files = true;
 
 ## Repated fields
 - Use pluralized names for repeated fields.
-```
+```proto
 repeated string keys = 1;
 repeated SubAccount sub_accounts = 17;
 ```
@@ -60,7 +60,7 @@ In preivous verison, you can't add the `[deprecated = true]` to an enum value. F
 - Move all deprecated fields to the bottom of your message. They just add noise for your reader.
 - Must add a **reason** for deprecation. This is non-negotiable!
 - If a field has been replaced by a newer field somewhere (same or different message), you must add a comment pointing to the new place:
-```
+```proto
 // The unique identifier for this account.
 optional string account_no = 12;
 // The unique identifier for this account.
