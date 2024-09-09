@@ -4,19 +4,22 @@
 
 ## Project structure
 ```
-src/
-  main/
-    java/
-    proto/
-      enums/
-        - all .proto files for enums
-      - all .proto files
-    resrouces/
-  test/
-    java/
-      - test classes for your generated java from .proto files
-    proto/
-    resources/
+project-root/
+  build.gradle
+  src/
+    main/
+      java/
+        - useful java utils for working with your protos
+      proto/
+        enums/
+          - all .proto files for enums
+        - all .proto files
+      resrouces/
+    test/
+      java/
+        - test classes for your generated java from .proto files
+      proto/
+      resources/
 ```
 
 ## File formatting
