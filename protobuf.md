@@ -60,8 +60,11 @@ In preivous verison, you can't add the `[deprecated = true]` to an enum value. F
 - Move all deprecated fields to the bottom of your message. They just add noise for your reader.
 - If a field has been replaced by a newer field somewhere (same or different message), you must add a comment pointing to the new place:
 ```
-// Deprecated:
-optional string account_id = 5;
+// The unique identifier for this account.
+optional string account_no = 12;
+// The unique identifier for this account.
+// Deprecated: Repalced by field 'account_no' (#12). Upstream has started using alphabets in the account identifer since May 2012.
+optional int64 account_id = 5;
 ```
 
 ## Common field types
