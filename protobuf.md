@@ -59,7 +59,12 @@ option java_multiple_files = true;
 ```
 
 ## Message and Field Names 
--
+- DO NOT use redundant suffixes like "Info", "Details", etc. in message names:
+```proto
+message AccountInfo { // just name this "Account"
+  ...
+}
+```
 
 ## Required fields
 - Never use. All fields must always be `optional`. Rationale: No field is permanent. Yes, even your field contianing primary key. The world keeps evolving, and you never know what field is now suddenly nullable.
