@@ -38,7 +38,11 @@ In preivous verison, you can't add the `[deprecated = true]` to an enum value. F
 optional string account_id = 5;
 ```
 
-## Date and time
+## Common field types
+### Date and time
+-
+### Currency
+- Just define a single enum to hold all the ISO-3 currency codes, and swear to yourself to never use anything else for a field meant to hold a currency value. 
 
 # proto3
 
