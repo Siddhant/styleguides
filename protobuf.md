@@ -67,7 +67,7 @@ message AccountInfo { // just name this "Account"
 ```
 
 ## Required fields
-- Never use. All fields must always be `optional`. Rationale: No field is permanent. Yes, even your field contianing primary key. The world keeps evolving, and you never know what field is now suddenly nullable.
+- NEVER use. All fields must always be `optional`. Rationale: No field is permanent. Yes, even your field contianing primary key. The world keeps evolving, and you never know what field is now suddenly nullable.
   
 
 ## Repated fields
