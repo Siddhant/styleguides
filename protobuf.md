@@ -7,12 +7,13 @@
 
 # proto2
 ## File structure
-- Alwyas start with an author section:
+- Alwyas start with an author and date-of-file-creation section:
 ```
 // Author: Siddhant Saraf (Siddhant.Saraf@abc.com)
 // Author: Mickey Mouse (mickey@disney.com)
+// Date: 
 ```
-Rationale: Data modelling is an art, and any canvas should always have its author's signature.
+Rationale: Data modelling is an art, and any canvas should always have its author's signature. Hence, if you are migrating protos across files, carry over the Author names please - pay respect to the giants whoe shoulders you are sitting on!
 
 ## Packages
 -
