@@ -64,7 +64,7 @@ In preivous verison, you can't add the `[deprecated = true]` to an enum value. F
 // The unique identifier for this account.
 optional string account_no = 12;
 // The unique identifier for this account.
-// Deprecated: Repalced by field 'account_no' (#12). Reason: Upstream has started using alphabets in the account identifer since May 2012.
+// Deprecated: Repalced by field 'account_no' (#12). Reason: Our upstream has started using alphabets in the account identifer since May 2012.
 optional int64 account_id = 5;
 ```
 
