@@ -1,11 +1,11 @@
-# proto2
-
+# General
 ## Philosophy
 - I belive the `.proto` file to be a data dictioanry for your users. Hence, comment as much as you can everywhere. Since data modelling is an art, even docuemnt your desing decisionioning process.
 
 ## File formatting
 - Use 2 spaces to indent.
 
+# proto2
 ## File structure
 -
 
