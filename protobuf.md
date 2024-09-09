@@ -18,6 +18,12 @@ Rationale: Data modelling is an art, and any canvas should always have its autho
 ## Packages
 -
 
+## Options
+- Always enable the Java multiple files option, even if (today!) you have only one message in the file:
+```
+option java_multiple_files = true;
+```
+
 ## Message and Field Names 
 -
 
