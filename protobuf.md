@@ -59,12 +59,12 @@ option java_multiple_files = true;
 ```
 
 ## Message and Field Names 
-- DO NOT use redundant suffixes like "Info", "Details", etc. in message names:
+- Don't use suffixes like "Details", "Info", etc. in message names:
 ```proto
 message AccountInfo { // just name this "Account"
-  ...
-}
+message CardDetails { // just name this "Card"
 ```
+Rationale: It's redundant - all messages contain details/info of _something_.
 
 ## Required fields
 - NEVER use. All fields must always be `optional`. Rationale: No field is permanent. Yes, even your field contianing primary key. The world keeps evolving, and you never know what field is now suddenly nullable.
@@ -78,7 +78,16 @@ repeated SubAccount sub_accounts = 17;
 ```
 
 ## Enums
-In preivous verison, you can't add the `[deprecated = true]` to an enum value. For those cases, just 
+- Always put an enum inside a message. While protobuf allows you to define "bare" (gloabl) enums, these enums are known to cause an issue - if they are imported into other files, they will start interfering with other enum values. See this StackOverflow[https://stackoverflow.com/questions/27030332/solutions-to-resolve-enum-field-naming-restriction-in-google-protobuf-due-to-c] for more details.
+- Its not always necessary to for enum values to be sorted alphabetically. Some developers find it useful, some find it useless work. It's left to the develoep's preference. However, if you are adding new values to an existing enum, respect the convention being followed. 
+- In preivous verisons of the protobuf compiler (`protoc`), you can't add the `[deprecated = true]` to an enum value. For those cases, just add a comment:
+```proto
+enum MyEnum {
+  MY_ENUM_UNSPECIFIED = 1;
+  OLD_VLUE = 2; // deprecated; use OLD_VALUE instead; Reason: was a typo
+  OLD_VALUE = 3;
+}
+```
 
 ## Deprecated fields
 - Must use the `[deprecated = true]` annotation. Unless it is a soft-deprecation; then you can just add a comment.
@@ -91,6 +100,18 @@ optional string account_no = 12;
 // The unique identifier for this account.
 // Deprecated: Repalced by field 'account_no' (#12). Reason: Our upstream has started using alphabets in the account identifer since May 2012.
 optional int64 account_id = 5;
+```
+
+## Data Modelling tips and tricks
+- For entity-entity relationships, do not add "relationship" attribtues inside the "entity" message. Instead create a _new_ "Relationship" message to contain the parameters of the relationship between the two entities.
+```proto
+// TODO improve this exmaple, it's not the best right now
+message Comapny {}
+message Preson {}
+message ComapnyPersonRealtionship {
+  optional Date employment_start_date = 1;
+  optional Date employment_end_date = 2;
+}
 ```
 
 ## Common field types
