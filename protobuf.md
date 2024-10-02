@@ -19,6 +19,7 @@ project-root/
       java/
         - test classes for your generated java from .proto files
       proto/
+        - .proto files required for testing-only
       resources/
 ```
 
