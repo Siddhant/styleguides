@@ -58,6 +58,11 @@ Rationale: Data modelling is an art, and any canvas should always have its autho
 ```proto
 option java_multiple_files = true;
 ```
+- also add:
+```
+option java_package = "com.example.tutorial.protos";
+option java_outer_classname = "AddressBookProtos";
+```
 
 ## Message and Field Names 
 - Don't use suffixes like "Details", "Info", etc. in message names:
