@@ -59,7 +59,7 @@ Rationale: Data modelling is an art, and any canvas should always have its autho
 option java_multiple_files = true;
 ```
 - also add:
-```
+```proto
 option java_package = "com.example.tutorial.protos";
 option java_outer_classname = "AddressBookProtos";
 ```
