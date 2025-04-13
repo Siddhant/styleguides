@@ -7,6 +7,13 @@
   ```
 - xxx
 
+# Tables
+- For reference data tables, always use singular name for your table, rather than plural.
+  - Rationale: 
+  - Examples:
+    - If you have a table which stores basic refernce data for Banks, name the table `bank`, not `banks`.
+    - If you have a table which stores relationships between two financial instruments, name the table `relationship` not `relationships`.
+
 # Columns
 - Unless really required, columns names should be lowercase.
 
@@ -22,3 +29,8 @@
   - Rationale: SQLite will silently ignore any foreign key constraints unless we enable this.
 - Always use the `STRICT` keyword when declaring tables.
   - Rationale: We want strong typing to be enforced.
+
+# References
+While there are many SQL style guides, here are some I like and have taken inspiration from:
+- https://www.sqlstyle.guide
+- https://docs.telemetry.mozilla.org/concepts/sql_style
