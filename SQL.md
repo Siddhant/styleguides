@@ -8,8 +8,8 @@
 - xxx
 
 # Tables
-- For reference data tables, always use singular name for your table, rather than plural.
-  - Rationale: 
+- For reference data tables, always use singular name for your table, rather than plural/collective.
+  - Rationale: Reading “SELECT employee.first_name” makes much more sense than “SELECT employees.first_name” / “SELECT staff.first_name”
   - Examples:
     - If you have a table which stores basic refernce data for Banks, name the table `bank`, not `banks`.
     - If you have a table which stores relationships between two financial instruments, name the table `relationship` not `relationships`.
