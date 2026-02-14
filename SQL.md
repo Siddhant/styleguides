@@ -8,6 +8,7 @@
 - xxx
 
 # Tables
+- Never give a table the same name as one of its columns and vice versa.
 - For reference data tables, always use singular name for your table, rather than plural/collective.
   - Rationale: Reading “SELECT employee.first_name” makes much more sense than “SELECT employees.first_name” / “SELECT staff.first_name”
   - Examples:
