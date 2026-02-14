@@ -13,6 +13,7 @@
   - Examples:
     - If you have a table which stores basic refernce data for Banks, name the table `bank`, not `banks`.
     - If you have a table which stores relationships between two financial instruments, name the table `relationship` not `relationships`.
+    - A table connecting customers (table `customer`) to their accounts (table `account`) should be called `customer_account` not `customers_accounts`.
 
 # Columns
 - Unless really required, columns names should be lowercase.
