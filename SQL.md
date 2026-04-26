@@ -33,7 +33,6 @@
 
 
 ## Priamry Key(s) (PK)
-- Specify the primary key first right after the CREATE TABLE statement - even before the column definitions.
 - Primary key(s) is never defined inline, even if the PK is just a single column. Always defined as a `constraint`, immediately after all the column definitions.
 - The primary key constraint is always named with a prefix, like so: `PK_<table_name>` / `pk_<table_name>`
 
