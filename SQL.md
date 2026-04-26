@@ -14,7 +14,7 @@
   name text not null
     check(length(trim(name)) > 0)
   ```
-- A column of type `text` if defined as `not null` should always disallow empty strings: `check(length(trim(column_name)) > 0)`
+- A column of type `text`, if defined as `not null`, should always disallow empty strings: `check(length(trim(column_name)) > 0)`
 
 ## Priamry Key(s) (PK)
 - Primary key(s) is never defined inline, even if the PK is just a single column. Always defined as a `constraint`, immediately after all the column definitions.
