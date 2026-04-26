@@ -13,7 +13,7 @@
   - Where possible avoid simply using id as the primary identifier for the table.
   - Do not add a column with the same name as its table and vice versa.
   - Always use lowercase except where it may make sense not to such as proper nouns.
-- The `check` clause for a column always begins on a new line, and with an additional indentation level.
+- The `check` clause for a column immediately follows a column definition, and always begins on a new line with an additional indentation level.
   ```
   name text not null
     check(length(trim(name)) > 0)
