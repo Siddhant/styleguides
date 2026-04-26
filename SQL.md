@@ -19,6 +19,18 @@
     check(length(trim(name)) > 0)
   ```
 - A column of type `text`, if defined as `not null`, should always disallow empty strings: `check(length(trim(column_name)) > 0)`
+- Uniform suffixes - The following suffixes have a universal meaning ensuring the columns can be read and understood easily from SQL code. Use the correct suffix where appropriate:
+  - `_id`—a unique identifier such as a column that is a primary key.
+  - `_status`—flag value or some other status of any type such as publication_status.
+  - `_total`—the total or sum of a collection of values.
+  - `_num`—denotes the field contains any kind of number.
+  - `_name`—signifies a name such as first_name.
+  - `_seq`—contains a contiguous sequence of values.
+  - `_date`—denotes a column that contains the date of something.
+  - `_tally`—a count.
+  - `_size`—the size of something such as a file size or clothing.
+  - `_addr`—an address for the record could be physical or intangible such as ip_addr.
+
 
 ## Priamry Key(s) (PK)
 - Primary key(s) is never defined inline, even if the PK is just a single column. Always defined as a `constraint`, immediately after all the column definitions.
