@@ -8,7 +8,11 @@
     - A table connecting customers (table `customer`) to their accounts (table `account`) should be called `customer_account` not `customers_accounts`.
 
 ## Columns
-- Unless really required, columns names should be lowercase.
+- Naming:
+  - Always use the singular name.
+  - Where possible avoid simply using id as the primary identifier for the table.
+  - Do not add a column with the same name as its table and vice versa.
+  - Always use lowercase except where it may make sense not to such as proper nouns.
 - The `check` clause for a column always begins on a new line, and with an additional indentation level.
   ```
   name text not null
